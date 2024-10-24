@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="assets/suraa.png">
+    <title>Reservación de Citas - Mascotas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Reservación de Citas para Mascotas</h1>
+    </header>
+
+    <section>
+        <article>
+            <!-- Formulario para solicitar datos del dueño y la mascota -->
+            <fieldset id="datosMascota">
+                <legend>Datos de la Mascota: </legend>
+                <input type="text" id="nombreMascota" placeholder="Nombre de la Mascota">
+                <input type="text" id="tipoMascota" placeholder="Tipo (Perro, Gato, etc.)">
+                <input type="text" id="raza" placeholder="Raza">
+                <input type="text" id="preferencias" placeholder="Preferencias (Baño, Corte, Tratamiento)">
+                <button id="agendar" onclick="agendarCita();">Agendar Cita</button>
+            </fieldset>
+
+            <!-- Listado de citas -->
+            <fieldset id="citas">
+                <legend>Reservaciones:</legend>
+                <div id="listaCitas"></div>
+            </fieldset>
+        </article>
+    </section>
+
+    <footer>Elaborado por Angel Ramiro Cerrillo Mastranzo</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
